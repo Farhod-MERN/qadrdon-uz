@@ -10,10 +10,18 @@
   -moz-osx-font-smoothing: grayscale;
   
 }
-
+.myBgdark{
+  background: #16181D !important;
+}
+.myBgdark2{
+  background: #2d2e2f !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.nav-link.dropdown-toggle image.medium-avatar::after{
+  color: aliceblue;
 }
 
 #theme {
@@ -49,6 +57,10 @@ img {
 }
 .myNotify{
   width: 500px;
+}
+.notifyBlock{
+  max-height: calc(100vh - 200px); 
+  overflow: auto
 }
 
 /* -------- AUTH ---------- */
@@ -155,6 +167,7 @@ img {
   .myRightSide{
     margin-bottom: 100px;
   }
+
   .chat_container{
     height: calc(100% - 130px);
   }
@@ -164,6 +177,10 @@ img {
    .my-Discover{
     margin-bottom: 150px;
    }
+   .notifyBlock{
+    max-height: 400px; 
+    overflow: auto
+  }
 }
 .leftSideBar{
   display: none;
@@ -186,8 +203,9 @@ img {
      top: -138px;
    }
    .myClasstoNotify .dropdown-menu{
-     position: absolute;
-     top: -400px;
+    overflow-y: auto; 
+    position: absolute;
+     top: -550px;
      right: 50%;
      left: 50%;
    }
@@ -203,10 +221,6 @@ img {
     display: block;
   } 
 }
-
-
-
-
 .mode{
   width: 100%;
   height: 100vh;

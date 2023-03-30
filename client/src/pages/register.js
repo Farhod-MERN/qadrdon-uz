@@ -34,8 +34,8 @@ const Register = () => {
 
     return (
         <div className="auth_page">
-            <form onSubmit={handleSubmit}>
-                <h3 className="text-uppercase text-center mb-4">
+            <form onSubmit={handleSubmit} className="myBgdark2 text-light">
+                <h3 className="text-uppercase text-center ">
                 <img className='bg-transparent' src="https://media.graphassets.com/xVHfJFDfTymEaTFIpbZ8" width={62} alt="" />
                 </h3>
 
@@ -82,8 +82,8 @@ const Register = () => {
                         onChange={handleChangeInput} value={password} name="password"
                         style={{background: `${alert.password ? '#fd2d6a14' : ''}`}} />
 
-                        <small onClick={() => setTypePass(!typePass)}>
-                            {typePass ? <span class="material-icons mt-1">visibility_off</span> : <span class="material-icons mt-1">visibility</span>}
+                        <small onClick={() => setTypePass(!typePass)} className="text-dark">
+                            {typePass ? <span className="material-icons mt-1">visibility_off</span> : <span className="material-icons mt-1">visibility</span>}
                         </small>
                     </div>
 
@@ -102,8 +102,8 @@ const Register = () => {
                         onChange={handleChangeInput} value={cf_password} name="cf_password"
                         style={{background: `${alert.cf_password ? '#fd2d6a14' : ''}`}} />
 
-                        <small onClick={() => setTypeCfPass(!typeCfPass)}>
-                            {typeCfPass ? <span class="material-icons mt-1">visibility_off</span> : <span class="material-icons mt-1">visibility</span>}
+                        <small onClick={() => setTypeCfPass(!typeCfPass)} className="text-dark">
+                            {typeCfPass ? <span className="material-icons mt-1">visibility_off</span> : <span className="material-icons mt-1">visibility</span>}
                         </small>
                     </div>
 
@@ -129,12 +129,12 @@ const Register = () => {
                     </label>
                 </div>
                 
-                <button type="submit" className="btn btn-dark w-100">
+                <button type="submit" className="btn btn-dark w-100 bg-success">
                     Ro'yhatdan o'tish
                 </button>
 
                 <p className="my-2">
-                    Sizda profil mavjudmi ? <Link to="/" style={{color: "crimson"}}> Tizimga kirish</Link>
+                    Sizda profil mavjudmi ? <Link to="/"> Tizimga kirish</Link>
                 </p>
             </form>
         </div>

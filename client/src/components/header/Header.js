@@ -6,9 +6,9 @@ import Search from './Search'
 const Header = () => {
 
     return (
-        <div className="header bg-light">
+        <div className="header bg-light myBgdark">
             <nav className="navbar navbar-expand-lg navbar-light 
-            bg-light justify-content-between align-middle">
+            bg-light justify-content-between align-middle myBgdark">
 
                 <Link to="/" className="logo d-lg-flex text-decoration-none">
                     <h1 className="navbar-brand text-uppercase p-0 m-0"

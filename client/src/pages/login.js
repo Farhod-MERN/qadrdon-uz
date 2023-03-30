@@ -31,7 +31,7 @@ const Login = () => {
 
     return (
         <div className="auth_page">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="myBgdark2 text-light">
                 <h3 className="text-uppercase text-center mb-4"> 
                 <img className='bg-transparent' src="https://media.graphassets.com/xVHfJFDfTymEaTFIpbZ8" width={62} alt="" />
                 </h3>
@@ -55,20 +55,20 @@ const Login = () => {
                         className="form-control" id="exampleInputPassword1"
                         onChange={handleChangeInput} value={password} name="password" />
 
-                        <small onClick={() => setTypePass(!typePass)}>
+                        <small onClick={() => setTypePass(!typePass)} style={{color: "black"}}>
                             {typePass ? <span className="material-icons mt-2">visibility_off</span> : <span className="material-icons mt-2">visibility</span>}
                         </small>
                     </div>
                    
                 </div>
                 
-                <button type="submit" className="btn btn-dark w-100"
+                <button type="submit" className="btn btn-dark w-100 bg-success"
                 disabled={email && password ? false : true}>
                     Tizimga kirish
                 </button>
 
                 <p className="my-2">
-                    Profilingiz mavjud emasmi ? <Link to="/register" style={{color: "crimson"}}>Ro'yhatdan o'ting</Link>
+                    Profilingiz mavjud emasmi ? <Link to="/register">Ro'yhatdan o'ting</Link>
                 </p>
             </form>
         </div>

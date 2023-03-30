@@ -12,10 +12,12 @@ const RightSideBar = () => {
 
     return (
         <div className="mt-3 myRightSide">
-            <UserCard user={auth.user} />
+            <div className='myBgdark2 rounded'>
+            <UserCard user={auth.user}/>
+            </div>
 
             <div className="d-flex justify-content-between align-items-center my-2">
-                <h5 className="text-danger">Siz uchun mahsus !</h5>
+                <h5 className="text-success">Siz uchun mahsus !</h5>
                 {
                     !suggestions.loading &&
                     <i className="fas fa-redo" style={{cursor: 'pointer'}}

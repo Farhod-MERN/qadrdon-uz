@@ -9,13 +9,13 @@ const authCtrl = {
             let newUserName = username.toLowerCase().replace(/ /g, '')
 
             const user_name = await Users.findOne({username: newUserName})
-            if(user_name) return res.status(400).json({msg: "This user name already exists."})
+            if(user_name) return res.status(400).json({msg: "Bu username allaqachon mavjud"})
 
             const user_email = await Users.findOne({email})
-            if(user_email) return res.status(400).json({msg: "This email already exists."})
+            if(user_email) return res.status(400).json({msg: "Bu email allaqachon mavjud"})
 
             if(password.length < 6)
-            return res.status(400).json({msg: "Password must be at least 6 characters."})
+            return res.status(400).json({msg: "Parolingiz 6 ta belgidan kam bo'lmasin"})
 
             const passwordHash = await bcrypt.hash(password, 12)
 
@@ -54,10 +54,10 @@ const authCtrl = {
             const user = await Users.findOne({email})
             .populate("followers following", "avatar username fullname followers following")
 
-            if(!user) return res.status(400).json({msg: "This email does not exist."})
+            if(!user) return res.status(400).json({msg: "Bu email mavjud emas"})
 
             const isMatch = await bcrypt.compare(password, user.password)
-            if(!isMatch) return res.status(400).json({msg: "Password is incorrect."})
+            if(!isMatch) return res.status(400).json({msg: "Parolingiz noto'gri"})
 
             const access_token = createAccessToken({id: user._id})
             const refresh_token = createRefreshToken({id: user._id})

@@ -40,7 +40,7 @@ const Menu = () => {
                 </li>
 
                 <li className="nav-item dropdown myClasstoNotify" style={{opacity: 1}} >
-                    <span className="nav-link position-relative" id="navbarDropdown" 
+                    <span className=" nav-link position-relative" id="navbarDropdown" 
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                         <span className="material-icons text-success" 
@@ -69,13 +69,13 @@ const Menu = () => {
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <Link className="dropdown-item" to={`/profile/${auth.user._id}`}>Profilim</Link>
 
-                    <label htmlFor="theme" className="dropdown-item"
+                    {/* <label htmlFor="theme" className="dropdown-item d-none d-lg-block d-md-block"
                     onClick={() => dispatch({
                         type: GLOBALTYPES.THEME, payload: !theme
                     })}>
 
                         {theme ? <span className="material-icons" id='theme-icon' style={{fontSize: "1.35rem"}}>wb_sunny</span> :  <span className="material-icons" style={{fontSize: "1.35rem"}} id='theme-icon'>dark_mode</span>}
-                    </label>
+                    </label> */}
 
                     <div className="dropdown-divider"></div>
                     <Link className="dropdown-item" to="/"

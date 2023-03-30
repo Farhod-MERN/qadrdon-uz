@@ -21,7 +21,7 @@ const MsgDisplay = ({user, msg, theme, data}) => {
         <>
             <div className="chat_title">
                 <Avatar src={user.avatar} size="small-avatar" />
-                <span>{user.username}</span>
+                <span className='mx-2'>{user.username}</span>
             </div>
 
             <div className="you_content">

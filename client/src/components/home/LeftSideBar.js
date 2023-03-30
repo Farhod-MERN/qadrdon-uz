@@ -12,14 +12,14 @@ const LeftSideBar = () => {
     const postDisplay = post ? "none" : "block"    
     return (
         <div className="mt-3 leftSideBar">
-            <div className="d-flex justify-content-between align-items-center my-2">
-                <h5 className="text-danger"> Foydalanuchilar reytingi</h5>
-            </div>
+            {/* <div className="d-flex justify-content-between align-items-center my-2">
+                <h5 className="text-success text-center"> Foydalanuchilar reytingi</h5>
+            </div> */}
             <div className='sort'>
                 <div className='sortItem border'>
-                    <div className='leftHeader p-2 d-flex justify-content-between p-0 m-0'>
-                        <p className='m-0 p-0'>Likelar soni bo'yicha</p>
-                        <span class="material-icons m-0 p-0" style={{cursor:"pointer"}} onClick={()=>{setLike(!like)}}>add</span>
+                    <div className='leftHeader p-2 d-flex justify-content-between p-0 m-0 myBgdark2'>
+                        <p className='m-0 p-0 text-light'>Likelar soni bo'yicha</p>
+                        <span className="material-icons m-0 p-0 text-light" style={{cursor:"pointer"}} onClick={()=>{setLike(!like)}}>add</span>
                     </div>
                     <div style={{display: `${likeDisplay}`}} className="px-2 border-top">
                         <ol style={{listStyle: "none"}}>
@@ -37,18 +37,18 @@ const LeftSideBar = () => {
                     </div>
                 </div>
                 <div className='sortItem border'>
-                    <div className='leftHeader p-2 d-flex justify-content-between p-0 m-0'>
-                        <p className='m-0 p-0'>Eng ko'p Obunachi bo'yicha</p>
-                        <span class="material-icons m-0 p-0" style={{cursor:"pointer"}} onClick={()=>{setFollow(!follow)}}  >add</span>
+                    <div className='leftHeader p-2 d-flex justify-content-between p-0 m-0 myBgdark2'>
+                        <p className='m-0 p-0 text-light'>Eng ko'p Obunachi bo'yicha</p>
+                        <span className="material-icons m-0 p-0 text-light" style={{cursor:"pointer"}} onClick={()=>{setFollow(!follow)}}  >add</span>
                     </div>
                     <div  style={{display: `${followDisplay}`}} className="px-2 border-top">
                        2-  lorem
                     </div>
                 </div>
                 <div className='sortItem border'>
-                    <div className='leftHeader p-2 d-flex justify-content-between p-0 m-0'>
-                        <p className='m-0 p-0'>Eng ko'p Post bo'yicha</p>
-                        <span class="material-icons m-0 p-0" style={{cursor:"pointer"}} onClick={()=>{setPost(!post)}}>add</span>
+                    <div className='leftHeader p-2 d-flex justify-content-between p-0 m-0 myBgdark2'>
+                        <p className='m-0 p-0 text-light'>Eng ko'p Post bo'yicha</p>
+                        <span className="material-icons m-0 p-0 text-light" style={{cursor:"pointer"}} onClick={()=>{setPost(!post)}}>add</span>
                     </div>
                     <div style={{display:`${postDisplay}`}} className="px-2 border-top">
                         3 - lorem
