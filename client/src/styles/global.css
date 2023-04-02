@@ -11,10 +11,13 @@
   
 }
 .myBgdark{
-  background: #16181D !important;
+  /* background: #16181D !important; */
+  background: #2D3748 !important;
+  /* background: #1A202C !important; */
 }
 .myBgdark2{
-  background: #2d2e2f !important;
+  background: #2D3748 !important;
+  /* background: #2d2e2f !important; */
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

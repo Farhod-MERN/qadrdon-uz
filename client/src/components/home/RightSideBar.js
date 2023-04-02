@@ -12,7 +12,7 @@ const RightSideBar = () => {
 
     return (
         <div className="mt-3 myRightSide">
-            <div className='myBgdark2 rounded'>
+            <div className=' rounded'>
             <UserCard user={auth.user}/>
             </div>
 
@@ -42,7 +42,7 @@ const RightSideBar = () => {
             <div style={{opacity: 0.5}} className="my-2" >
                 <a href="https://farhod.vercel.app/" target="_blank" rel="noreferrer"
                 style={{wordBreak: 'break-all'}} >
-                    Biz haqimizda ko'proq biling
+                    Biz haqimizda
                 </a>
                 <p>
                     <a href='#!' style={{wordBreak: 'break-all'}} onClick={() => window.open("mailto:mrfarhod58@gmail.com")}>Do'stona taklif uchun</a>
@@ -52,7 +52,7 @@ const RightSideBar = () => {
                 </small>
 
                 <small>
-                   &copy;<code> {new Date().getFullYear()}</code>  QADRDONLAR UCHUN 
+                   &copy;<span> {new Date().getFullYear()}</span>  QADRDONLAR UCHUN 
                 </small>
             </div>
 

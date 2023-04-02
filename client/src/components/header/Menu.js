@@ -13,6 +13,7 @@ const Menu = () => {
         { label: 'Discover', icon: 'explore', path: '/discover'}
     ]
 
+    //eslint-disable-next-line
     const { auth, theme, notify } = useSelector(state => state)
     const dispatch = useDispatch()
     const { pathname } = useLocation()
